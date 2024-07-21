@@ -81,25 +81,18 @@ body,
 }
 
 .footer .container {
-  max-width: 1170px;
+  max-width: 1570px;
   margin: auto;
 }
 
-.footer .container .row > div {
-  flex: 1 1 25%; /* Mengatur agar setiap elemen div memenuhi 25% lebar container */
-
-  max-width: 25%; /* Maksimum lebar untuk setiap elemen div */
-  padding: 10px; /* Padding di dalam setiap elemen div */
+.footer .container .row .footer-col {
+  flex: 1 1 20%; /* Mengatur agar setiap elemen div memenuhi 25% lebar container */
+  padding: 0px; /* Padding di dalam setiap elemen div */
   box-sizing: border-box; /* Menjamin padding tidak menambahkan ukuran div */
 }
 
 .footer ul {
   list-style: none;
-}
-
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
 }
 
 .footer-col h4 {
@@ -109,7 +102,7 @@ body,
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 500;
   position: relative;
   box-sizing: border-box;
@@ -150,12 +143,12 @@ body,
   height: 40px;
   width: 40px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0; /* 0 top, 10px right, 10px bottom, 0 left*/
+  margin: 0px 10px 10px 0px; /* 0 top, 10px right, 10px bottom, 0 left*/
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
   color: #c4bdb3;
-  transition: all 0.5s ease;
+  transition: all 0.9s ease;
 }
 
 .footer-col .social-link a:hover {
@@ -173,4 +166,21 @@ body,
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.footer-col .info {
+  position: relative;
+}
+
+.footer-col .info li {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.footer-col .info li span:nth-child(1) {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
 }
